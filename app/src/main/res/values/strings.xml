@@ -20,4 +20,12 @@
     <string name="button_intent_flags">Intent With Flags</string>
     <string name="button_intent_object">Intent With Object</string>
     <string name="button_back">Go Back</string>
+    <string name="button_take_picture">Take a Picture</string>
+    <string name="preferences_name_hint">Type name here</string>
+    <string name="preferences_age_hint">Type age here</string>
+    <string name="preferences_button_save">Save</string>
+    <string name="extensions_toast">Toast</string>
+    <string name="extensions_snack_bar">Snack Bar</string>
+    <string name="extensions_load_url">Load URL</string>
+    <string name="extensions_go_to">Go To Activity</string>
 </resources>

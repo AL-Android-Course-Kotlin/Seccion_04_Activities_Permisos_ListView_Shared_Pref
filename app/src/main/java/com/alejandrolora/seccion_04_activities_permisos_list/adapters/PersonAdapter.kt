@@ -1,18 +1,15 @@
 package com.alejandrolora.seccion_04_activities_permisos_list.adapters
 
 import android.content.Context
-import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.BaseAdapter
 import android.widget.TextView
 import com.alejandrolora.seccion_04_activities_permisos_list.models.Person
+import com.alejandrolora.seccion_04_activities_permisos_list.others.inflate
 import kotlinx.android.synthetic.main.list_view_person.view.*
 
 class PersonAdapter(val context: Context, val layout: Int, val list: List<Person>) : BaseAdapter() {
-
-    private val mInflator: LayoutInflater = LayoutInflater.from(context)
-
 
     override fun getItem(position: Int): Any {
         return list[position]
@@ -32,7 +29,7 @@ class PersonAdapter(val context: Context, val layout: Int, val list: List<Person
         val vh: PersonViewHolder
 
         if (convertView == null) {
-            view = mInflator.inflate(layout, parent, false)
+            view = parent.inflate(layout)
             vh = PersonViewHolder(view)
             view.tag = vh
         } else {
